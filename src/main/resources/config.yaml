@@ -1,0 +1,20 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topics:
+    batting: "cricket-batting-topic"
+    bowling: "cricket-bowling-topic"
+
+postgresql:
+  host: "localhost"
+  port: 5432
+  database: "cricket_db"
+  user: "postgres"
+  password: "bankai"
+
+spark:
+  app_name: "CricketAnalytics"
+  master: "local[*]"
+  
+streaming:
+  window_duration: "15 minutes"
+  watermark: "15 minutes"
